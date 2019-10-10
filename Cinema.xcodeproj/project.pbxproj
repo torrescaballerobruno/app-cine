@@ -12,6 +12,14 @@
 		E10163D0233D7886002DAB71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10163CE233D7886002DAB71 /* Main.storyboard */; };
 		E10163D2233D7888002DAB71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10163D1233D7888002DAB71 /* Assets.xcassets */; };
 		E10163D5233D7888002DAB71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10163D3233D7888002DAB71 /* LaunchScreen.storyboard */; };
+		E10163DD233D7ACF002DAB71 /* Cartelera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163DC233D7ACF002DAB71 /* Cartelera.swift */; };
+		E10163DF233D7FEB002DAB71 /* CarteleraCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163DE233D7FEB002DAB71 /* CarteleraCollectionViewController.swift */; };
+		E10163E1233D817E002DAB71 /* PeliculaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163E0233D817E002DAB71 /* PeliculaCollectionViewCell.swift */; };
+		E10163E32349A0DF002DAB71 /* Carrito.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163E22349A0DF002DAB71 /* Carrito.swift */; };
+		E10163E52349B021002DAB71 /* Dulceria.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163E42349B021002DAB71 /* Dulceria.swift */; };
+		E10163E7234D3A46002DAB71 /* FuncionesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163E6234D3A46002DAB71 /* FuncionesTableViewController.swift */; };
+		E10163E9234D3E7F002DAB71 /* DulceriaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163E8234D3E7F002DAB71 /* DulceriaTableViewController.swift */; };
+		E10163EB234D3F11002DAB71 /* DulceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163EA234D3F11002DAB71 /* DulceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		E10163D1233D7888002DAB71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E10163D4233D7888002DAB71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E10163D6233D7889002DAB71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10163DC233D7ACF002DAB71 /* Cartelera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartelera.swift; sourceTree = "<group>"; };
+		E10163DE233D7FEB002DAB71 /* CarteleraCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarteleraCollectionViewController.swift; sourceTree = "<group>"; };
+		E10163E0233D817E002DAB71 /* PeliculaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculaCollectionViewCell.swift; sourceTree = "<group>"; };
+		E10163E22349A0DF002DAB71 /* Carrito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrito.swift; sourceTree = "<group>"; };
+		E10163E42349B021002DAB71 /* Dulceria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dulceria.swift; sourceTree = "<group>"; };
+		E10163E6234D3A46002DAB71 /* FuncionesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncionesTableViewController.swift; sourceTree = "<group>"; };
+		E10163E8234D3E7F002DAB71 /* DulceriaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DulceriaTableViewController.swift; sourceTree = "<group>"; };
+		E10163EA234D3F11002DAB71 /* DulceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DulceTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,14 @@
 				E10163D1233D7888002DAB71 /* Assets.xcassets */,
 				E10163D3233D7888002DAB71 /* LaunchScreen.storyboard */,
 				E10163D6233D7889002DAB71 /* Info.plist */,
+				E10163DC233D7ACF002DAB71 /* Cartelera.swift */,
+				E10163DE233D7FEB002DAB71 /* CarteleraCollectionViewController.swift */,
+				E10163E0233D817E002DAB71 /* PeliculaCollectionViewCell.swift */,
+				E10163E22349A0DF002DAB71 /* Carrito.swift */,
+				E10163E42349B021002DAB71 /* Dulceria.swift */,
+				E10163E6234D3A46002DAB71 /* FuncionesTableViewController.swift */,
+				E10163E8234D3E7F002DAB71 /* DulceriaTableViewController.swift */,
+				E10163EA234D3F11002DAB71 /* DulceTableViewCell.swift */,
 			);
 			path = Cinema;
 			sourceTree = "<group>";
@@ -135,8 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10163E1233D817E002DAB71 /* PeliculaCollectionViewCell.swift in Sources */,
+				E10163EB234D3F11002DAB71 /* DulceTableViewCell.swift in Sources */,
+				E10163DF233D7FEB002DAB71 /* CarteleraCollectionViewController.swift in Sources */,
+				E10163E9234D3E7F002DAB71 /* DulceriaTableViewController.swift in Sources */,
+				E10163E32349A0DF002DAB71 /* Carrito.swift in Sources */,
+				E10163E52349B021002DAB71 /* Dulceria.swift in Sources */,
 				E10163CD233D7886002DAB71 /* ViewController.swift in Sources */,
 				E10163CB233D7886002DAB71 /* AppDelegate.swift in Sources */,
+				E10163E7234D3A46002DAB71 /* FuncionesTableViewController.swift in Sources */,
+				E10163DD233D7ACF002DAB71 /* Cartelera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
