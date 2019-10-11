@@ -27,6 +27,21 @@ class CarritoViewController: UIViewController,UITableViewDataSource, UITableView
 
     @IBAction func comprar(_ sender: UIButton) {
         carrito.comprar()
+        
+        let errorController = UIAlertController(title: "Compra", message: "Compra Exitosa", preferredStyle: .alert)
+        
+        //let okAction = UIAlertAction(title: "Compra Exitosa", style: .cancel, handler: )
+        
+        let okAction = UIAlertAction(title: "Compra Exitosa", style: .cancel) { (data) in
+            self.total.text = "$   \(carrito.total())"
+            self.tableView.reloadData()
+        }
+        
+        errorController.addAction(okAction)
+        
+        present(errorController, animated: true, completion: nil)
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

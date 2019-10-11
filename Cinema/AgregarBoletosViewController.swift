@@ -16,6 +16,7 @@ class AgregarBoletosViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(funcion.cupo_disponible)
         titulo.text = funcion.pelicula.titulo
         view.backgroundColor = .lightGray
         //print(funcion.cupo_disponible)
