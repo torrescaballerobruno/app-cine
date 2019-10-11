@@ -12,7 +12,7 @@ class DulceriaTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -41,7 +41,10 @@ class DulceriaTableViewController: UITableViewController {
 
         return cell
     }
-
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150.0
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -86,5 +89,11 @@ class DulceriaTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "agregarDulce" {
+            let dest = segue.destination as! AgregarDulceViewController
+            let idx = self.tableView.indexPathForSelectedRow?.row ?? 0
+            dest.dulce = dulceria.dulces[idx]
+        }
+    }
 }

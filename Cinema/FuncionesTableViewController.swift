@@ -10,10 +10,11 @@ import UIKit
 
 class FuncionesTableViewController: UITableViewController {
 
-    var pelicula: String!
+    var pelicula: Pelicula!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.tableView.backgroundColor = .lightGray
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -30,14 +31,14 @@ class FuncionesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return cartelera.buscarFuncionesDe(nombre: pelicula).count
+        return cartelera.buscarFuncionesDe(nombre: pelicula.titulo).count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "funciones", for: indexPath)
         
-        let f: Funcion = cartelera.buscarFuncionesDe(nombre: pelicula)[indexPath.row]
+        let f: Funcion = cartelera.buscarFuncionesDe(nombre: pelicula.titulo)[indexPath.row]
         cell.textLabel?.text = "\(f.hora_inicio) - \(f.hora_fin)"
         //cell.
 
@@ -79,14 +80,27 @@ class FuncionesTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //boletosAgr
+        
+        if segue.identifier == "boletosAgr" {
+            let dest = segue.destination as! AgregarBoletosViewController
+            //let cell = sender as! PeliculaCollectionViewCell
+            let idx = self.tableView.indexPathForSelectedRow?.row ?? 0
+            
+            //let indexPath = self.collectionView.indexPath(for: cell)!
+            dest.funcion = cartelera.buscarFuncionesDe(nombre: pelicula.titulo)[idx]
+
+//            dest.pelicula = peliculas[indexPath.row]
+            
+        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+ 
 
 }

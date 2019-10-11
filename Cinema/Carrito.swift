@@ -26,14 +26,16 @@ struct Carrito{
 
         return total
     }
-    
-    func comprar(){
+
+    mutating func comprar(){
         for (f,c) in boletos{
             cartelera.comprarBoletos(nombre: f.pelicula.titulo, horaInicio: f.hora_inicio, cantidad: c)
         }
+        boletos.removeAll()
         for(d,c) in dulces{
             dulceria.comprarDulce(nombre: d.nombre, precio: d.precio, cantidad: c)
         }
+        dulces.removeAll()
     }
     
     mutating func agregarDulce(dulce: Dulce,cantidad: Int){

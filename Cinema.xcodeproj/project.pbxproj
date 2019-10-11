@@ -20,6 +20,10 @@
 		E10163E7234D3A46002DAB71 /* FuncionesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163E6234D3A46002DAB71 /* FuncionesTableViewController.swift */; };
 		E10163E9234D3E7F002DAB71 /* DulceriaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163E8234D3E7F002DAB71 /* DulceriaTableViewController.swift */; };
 		E10163EB234D3F11002DAB71 /* DulceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163EA234D3F11002DAB71 /* DulceTableViewCell.swift */; };
+		E10163ED234FF363002DAB71 /* AgregarBoletosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163EC234FF363002DAB71 /* AgregarBoletosViewController.swift */; };
+		E10163EF234FFBCF002DAB71 /* AgregarDulceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163EE234FFBCF002DAB71 /* AgregarDulceViewController.swift */; };
+		E10163F1235039A5002DAB71 /* CarritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163F0235039A5002DAB71 /* CarritoViewController.swift */; };
+		E10163F323503CE0002DAB71 /* CarritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10163F223503CE0002DAB71 /* CarritoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		E10163E6234D3A46002DAB71 /* FuncionesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncionesTableViewController.swift; sourceTree = "<group>"; };
 		E10163E8234D3E7F002DAB71 /* DulceriaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DulceriaTableViewController.swift; sourceTree = "<group>"; };
 		E10163EA234D3F11002DAB71 /* DulceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DulceTableViewCell.swift; sourceTree = "<group>"; };
+		E10163EC234FF363002DAB71 /* AgregarBoletosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarBoletosViewController.swift; sourceTree = "<group>"; };
+		E10163EE234FFBCF002DAB71 /* AgregarDulceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarDulceViewController.swift; sourceTree = "<group>"; };
+		E10163F0235039A5002DAB71 /* CarritoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoViewController.swift; sourceTree = "<group>"; };
+		E10163F223503CE0002DAB71 /* CarritoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,10 @@
 				E10163E6234D3A46002DAB71 /* FuncionesTableViewController.swift */,
 				E10163E8234D3E7F002DAB71 /* DulceriaTableViewController.swift */,
 				E10163EA234D3F11002DAB71 /* DulceTableViewCell.swift */,
+				E10163EC234FF363002DAB71 /* AgregarBoletosViewController.swift */,
+				E10163EE234FFBCF002DAB71 /* AgregarDulceViewController.swift */,
+				E10163F0235039A5002DAB71 /* CarritoViewController.swift */,
+				E10163F223503CE0002DAB71 /* CarritoTableViewCell.swift */,
 			);
 			path = Cinema;
 			sourceTree = "<group>";
@@ -159,15 +171,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10163F323503CE0002DAB71 /* CarritoTableViewCell.swift in Sources */,
 				E10163E1233D817E002DAB71 /* PeliculaCollectionViewCell.swift in Sources */,
 				E10163EB234D3F11002DAB71 /* DulceTableViewCell.swift in Sources */,
 				E10163DF233D7FEB002DAB71 /* CarteleraCollectionViewController.swift in Sources */,
+				E10163F1235039A5002DAB71 /* CarritoViewController.swift in Sources */,
 				E10163E9234D3E7F002DAB71 /* DulceriaTableViewController.swift in Sources */,
 				E10163E32349A0DF002DAB71 /* Carrito.swift in Sources */,
 				E10163E52349B021002DAB71 /* Dulceria.swift in Sources */,
 				E10163CD233D7886002DAB71 /* ViewController.swift in Sources */,
 				E10163CB233D7886002DAB71 /* AppDelegate.swift in Sources */,
+				E10163EF234FFBCF002DAB71 /* AgregarDulceViewController.swift in Sources */,
 				E10163E7234D3A46002DAB71 /* FuncionesTableViewController.swift in Sources */,
+				E10163ED234FF363002DAB71 /* AgregarBoletosViewController.swift in Sources */,
 				E10163DD233D7ACF002DAB71 /* Cartelera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

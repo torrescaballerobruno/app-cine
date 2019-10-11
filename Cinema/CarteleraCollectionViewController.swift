@@ -36,6 +36,7 @@ class CarteleraCollectionViewController: UICollectionViewController {
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
         return peliculas.count
     }
 
@@ -74,9 +75,26 @@ class CarteleraCollectionViewController: UICollectionViewController {
     }
      */
     
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "selectFuncion" {
+            let dest = segue.destination as! FuncionesTableViewController
+            let cell = sender as! PeliculaCollectionViewCell
+            
+            let indexPath = self.collectionView.indexPath(for: cell)!
+            //print(indexPath.row)
+            //print(peliculas[indexPath.row].titulo)
+            dest.pelicula = peliculas[indexPath.row]
+            
+        }
     }
+    
+    /*
+    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
+        print("asdasas")
+        let tableView = FuncionesTableViewController()
+        tableView.pelicula = peliculas[indexPath.row].titulo
+        self.navigationController?.pushViewController(tableView, animated: true)
+    }*/
  
 
 }
